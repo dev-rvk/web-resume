@@ -15,7 +15,7 @@ export default function Info (){
     return(
             <>
                 <div className={'container'}>
-                <h1>hello, world!</h1>
+                <h1> {'<'} hello, world! {'>'} </h1>
                     <p className={'moving'}>
           <span style={{ fontSize: fSize }}>
               I am {mobile ? <br /> : ' '}
