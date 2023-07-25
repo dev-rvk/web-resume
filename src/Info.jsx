@@ -5,9 +5,11 @@ import { SocialIcon } from 'react-social-icons';
 export default function Info (){
     let fSize = '38px'
     let iconDim = 30
+    let mobile = false
     if(window.innerWidth < 850){
        fSize = '24px'
         iconDim = 20
+        mobile = true
     }
 
     return(
@@ -16,33 +18,28 @@ export default function Info (){
                 <h1>hello, world!</h1>
                     <p className={'moving'}>
           <span style={{ fontSize: fSize }}>
-            {' '}
-              I am <br /> {/* Add a line break here */}
+              I am {mobile ? <br /> : ' '}
           </span>
-                        <div
-                            style={{
-                                fontSize: fSize,
-                                color: '#72b626',
-                                display: 'inline-block', // Add this to keep the TypeAnimation inline
-                            }}
-                        >
-                            <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed once, initially
-                                    'Raghav Korde 👋',
-                                    2000,
-                                    'a Full Stack Developer 👨‍💻',
-                                    1000,
-                                    'Student 🎓',
-                                    1000,
-                                    'a Tech Enthusiast !',
-                                    1000,
-                                ]}
-                                wrapper={'b'}
-                                speed={75}
-                                repeat={Infinity}
-                            />
-                        </div>
+                <TypeAnimation
+                    sequence={[
+                        // Same substring at the start will only be typed once, initially
+                        'Raghav Korde 👋',
+                        2000,
+                        'a Full Stack Developer 👨‍💻',
+                        1000,
+                        'Student 🎓',
+                        1000,
+                        'a Tech Enthusiast !',
+                        1000,
+                    ]}
+                    wrapper={'b'}
+                    speed={75}
+                    repeat={Infinity}
+                    style={{
+                        fontSize: fSize,
+                        color: '#72b626',
+                    }}
+                />
                     </p>
                 <div className={'bottom'}>
                     <ul>
