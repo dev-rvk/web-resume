@@ -5,10 +5,17 @@ import Info from "./Info.jsx";
 function App() {
 
   return (
-    <div className={'home'}>
-        <PDFView className={'pdf'}/>
-        <Info className={'info'}/>
-    </div>
+      <>
+      <div className={'home'}>
+          <div className={'pdf'} ><PDFView /></div>
+          <div className={'info'}> <Info /> </div>
+
+      </div>
+      <div className={'container-mobile'}>
+          <div className={'info'}> <Info /> </div>
+          <div className={'pdf'} ><PDFView /></div>
+      </div>
+      </>
   )
 }
 

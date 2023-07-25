@@ -3,51 +3,67 @@ import './Info.css'
 import { SocialIcon } from 'react-social-icons';
 
 export default function Info (){
+    let fSize = '38px'
+    let iconDim = 30
+    if(window.innerWidth < 850){
+       fSize = '24px'
+        iconDim = 20
+    }
 
     return(
             <>
                 <div className={'container'}>
                 <h1>hello, world!</h1>
-                <p className={'moving'}>
-                    <span style={{fontSize: '2em'}}>I am{' '}</span>
-                    <TypeAnimation
-                        sequence={[
-                            // Same substring at the start will only be typed once, initially
-                            'Raghav Korde 👋',
-                            2000,
-                            'a Full Stack Developer 👨‍💻',
-                            1000,
-                            'Student 🎓',
-                            1000,
-                            'a Technology Enthusiast !',
-                            1000,
-                        ]}
-                        wrapper={"b"}
-                        speed={75}
-                        style={{ fontSize: '2em', color: '#72b626' }}
-                        repeat={Infinity}
-                    />
-                </p>
+                    <p className={'moving'}>
+          <span style={{ fontSize: fSize }}>
+            {' '}
+              I am <br /> {/* Add a line break here */}
+          </span>
+                        <div
+                            style={{
+                                fontSize: fSize,
+                                color: '#72b626',
+                                display: 'inline-block', // Add this to keep the TypeAnimation inline
+                            }}
+                        >
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed once, initially
+                                    'Raghav Korde 👋',
+                                    2000,
+                                    'a Full Stack Developer 👨‍💻',
+                                    1000,
+                                    'Student 🎓',
+                                    1000,
+                                    'a Tech Enthusiast !',
+                                    1000,
+                                ]}
+                                wrapper={'b'}
+                                speed={75}
+                                repeat={Infinity}
+                            />
+                        </div>
+                    </p>
                 <div className={'bottom'}>
                     <ul>
                         <li>
                             <a href="https://linkedin.com/in/raghav-korde">
-                                <SocialIcon network="linkedin" style={{ height: 30, width: 30 }} /> /raghavkorde
+                                <SocialIcon network="linkedin" style={{ height: iconDim, width: iconDim }} /> /raghavkorde
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/raghavkorde">
-                                <SocialIcon network="github" bgColor='#ffffff' style={{ height: 30, width: 30 }} /> /raghavkorde
+                                <SocialIcon network="github" bgColor='#ffffff' style={{ height: iconDim, width: iconDim }} /> /raghavkorde
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/raghav_korde/">
-                                <SocialIcon network="instagram" style={{ height: 30, width: 30 }} /> @raghavkorde
+                                <SocialIcon network="instagram" style={{ height: iconDim, width: iconDim }} /> @raghavkorde
                             </a>
                         </li>
                         <li>
                             <a href="mailto:raghavkorde4@gmail.com">
-                                <SocialIcon network="email" bgColor='#c0c0c0' style={{ height: 30, width: 30 }} /> Contact
+                                <SocialIcon network="email" bgColor='#c0c0c0' style={{ height: iconDim, width: iconDim }} /> Contact
                             </a>
                         </li>
 

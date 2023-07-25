@@ -4,19 +4,34 @@
   padding: 2rem;
   text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-
+/* Default layout for larger screens */
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide the screen into two columns with equal width */
   height: 100vh; /* Set the height of the container to the full viewport height */
 }
+.container-mobile{
+  display: none;
+}
+/* Media query for mobile devices (max-width 767px) */
+@media (max-width: 850px) {
+  .home{
+    display: none;
+  }
+  .container-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+/*.home {*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr; !* Divide the screen into two columns with equal width *!*/
+/*  height: 100vh; !* Set the height of the container to the full viewport height *!*/
+/*}*/
 
 
 
