@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 300px; /* Set the height of the container if needed */
+    align-items: center;
+}
+
+.moving{
+    margin-top:50px ;
+    text-align: left;
+}
+
+.bottom {
+    margin-top: 25%; /* Push the child to the bottom of the container */
+    font-size: 25px;
+    align-items: baseline;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
