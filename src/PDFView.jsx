@@ -1,6 +1,6 @@
 import './PDFView.css'
 
-const pdfUrl = import.meta.env.BASE_URL + '/resume.pdf'
+const pdfUrl = 'https://web-resume-raghav-korde.vercel.app/' + '/resume.pdf'
 function PDFView() {
     return (
         <div>
