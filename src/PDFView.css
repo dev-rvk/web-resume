@@ -25,6 +25,11 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+.mobileview{
+    display: none;
+}
+
 @media (max-width: 767px) {
     .app-container {
         text-align: center;
@@ -38,6 +43,9 @@
     .pdf-frame {
         width: 100%;
         border: none;
+    }
+    .mobileview{
+        color: #cc0000;
     }
 
 }

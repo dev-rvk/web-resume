@@ -5,6 +5,7 @@ function PDFView() {
     return (
         <div>
             <div className="app-container">
+                <p className={'mobileview'}> If your browser does not support PDF Rendering click on download button below. </p>
                 {/*<h1>My Resume</h1>*/}
                 <iframe src={pdfUrl} title="My Resume" className="pdf-frame" />
                 <br/>
