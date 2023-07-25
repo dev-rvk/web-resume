@@ -13,7 +13,7 @@ export default function Info (){
     }
 
     return(
-            <>
+            <div>
                 <div className={'container'}>
                 <h1> {'<'} hello, world! {'>'} </h1>
                     <p className={'moving'}>
@@ -68,6 +68,6 @@ export default function Info (){
 
                 </div>
                 </div>
-            </>
+            </div>
 
     )}
