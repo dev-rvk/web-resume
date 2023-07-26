@@ -1,7 +1,7 @@
 import './PDFView.css'
 
 // const pdfUrl = 'https://web-resume-raghav-korde.vercel.app/' + '/resume.pdf'
-const pdfUrl = 'https://etvjtiacin-my.sharepoint.com/personal/rvkorde_b21_et_vjti_ac_in/_layouts/15/embed.aspx?UniqueId=8c2730fa-1b7d-4a7f-8e9f-8c2e3d7a5851'
+const pdfUrl = 'https://drive.google.com/file/d/1uBNKPKKL6LUY8frjs5Njk-Ss7sswlBp9/preview'
 function PDFView() {
     return (
         <div>
@@ -13,8 +13,6 @@ function PDFView() {
                     width="65%"
                     height="100%"
                     allowFullScreen={false}
-                    frameBorder={0}
-                    scrolling="no"
                     title="Raghav_Korde_Resume.pdf"
                 />
                 <br/>
