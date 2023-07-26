@@ -1,7 +1,8 @@
 .container {
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    height: 300px; /* Set the height of the container if needed */
+    padding-bottom: 20px;
+    height: auto;
     align-items: center;
 }
 
