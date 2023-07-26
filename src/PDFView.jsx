@@ -2,6 +2,7 @@ import './PDFView.css'
 
 // const pdfUrl = 'https://web-resume-raghav-korde.vercel.app/' + '/resume.pdf'
 const pdfUrl = 'https://drive.google.com/file/d/1uBNKPKKL6LUY8frjs5Njk-Ss7sswlBp9/preview'
+const downloadUrl = 'https://drive.google.com/uc?export=download&id=1uBNKPKKL6LUY8frjs5Njk-Ss7sswlBp9'
 function PDFView() {
     return (
         <div>
@@ -17,7 +18,7 @@ function PDFView() {
                 />
                 <br/>
                 <br/>
-                <button  onClick={() => window.open(pdfUrl, '_blank')}>Download</button>
+                <button  onClick={() => window.location.replace(downloadUrl)}>Download</button>
             </div>
     </div>
     );
