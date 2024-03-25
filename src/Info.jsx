@@ -49,8 +49,8 @@ export default function Info (){
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/raghavkorde">
-                                <SocialIcon network="github" bgColor='#ffffff' style={{ height: iconDim, width: iconDim }} /> /raghavkorde
+                            <a href="https://github.com/dev-rvk">
+                                <SocialIcon network="github" bgColor='#ffffff' style={{ height: iconDim, width: iconDim }} /> /dev-rvk
                             </a>
                         </li>
                         <li>
